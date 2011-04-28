@@ -1,0 +1,29 @@
+DCT3-GSMTAP
+===========
+
+DCT3-GSMTAP is a command line utility to capture the GSM Um and SIM-ME
+interfaces from a Nokia DCT3 phone (eg. 3310) and forward via GSMTAP to the
+Wireshark protocol analyzer. It is released under GNU GPL version 2.
+
+It is heavily based on Gammu <http://www.gammu.org> and Project Blacksphere:
+
+<http://nokix.pasjagsm.pl/help/blacksphere/sub_200nokiaos.htm>
+This site is the result of a great deal of assembly code reading, research,
+countless (mostly futile) searches for data sheets, cross-referencing and
+analysing. If you use this information in any way please mention wumpus
+<blacksphere@goliath.darktech.org> (and others in the credits section) in the
+credits of your program/document. And tell me :) If you have more information
+please contribute. If you just copy this, stick your name on it and call it
+yours I hope you get your genitals bitten off by a three headed monkey. Have a
+nice day.
+
+A serial/USB FBUS cable is required.
+
+Usage
+=====
+
+dct3-gsmtap device host
+
+The device should be something like /dev/ttyUSB0 (check dmesg once plugged in
+for exact name) or /dev/ttyS0. The host is where to send the GSMTAP
+packets to (224.0.0.1 is a good option).
