@@ -2,7 +2,7 @@ CFLAGS=-Wall -Werror
 
 all: dct3-gsmtap
 
-dct3tap: main.o
+dct3-gsmtap: main.o
 	$(CC) $(LDFLAGS) -o $@ $^
 
 %.o: %.c
