@@ -372,7 +372,7 @@ static int fbus_receive_message(unsigned char expected_type, unsigned char** out
 				return 0;
 #ifdef DEBUG
 			else
-				printf("Wanted msg 0x%x, got 0x%x\n", type, out_type);
+				printf("Wanted msg 0x%x, got 0x%x\n", expected_type, out_type);
 #endif
 		}
 		else
